@@ -1,17 +1,23 @@
-<?php defined('BASEPATH') or exit('No direct script access allowed');
-#===================================================|
-# Please DO NOT modify this information :			      |
-#---------------------------------------------------|
-# @Author 		: Susantokun
-# @Date 		  : 2018-05-26T18:54:14+07:00
-# @Email 		  : support@susantokun.com
-# @Project 		: CodeIgniter
-# @Filename 	: Auth.php
-# @Instagram 	: susantokun
-# @Website 		: http://www.susantokun.com
-# @Youtube 		: http://youtube.com/susantokun
-# @Last modified time: 2018-05-27T05:28:54+07:00
-#===================================================|
+<?php 
+
+defined('BASEPATH') or exit('No direct script access allowed');
+
+/*
+ * |==============================================================|
+ * | Please DO NOT modify this information :                      |
+ * |--------------------------------------------------------------|
+ * | Author          : Susantokun
+ * | Email           : admin@susantokun.com
+ * | Filename        : Auth.php
+ * | Instagram       : @susantokun
+ * | Blog            : http://www.susantokun.com
+ * | Info            : http://info.susantokun.com
+ * | Demo            : http://demo.susantokun.com
+ * | Youtube         : http://youtube.com/susantokun
+ * | File Created    : Friday, 13th March 2020 3:37:45 am
+ * | Last Modified   : Friday, 13th March 2020 3:40:47 am
+ * |==============================================================|
+ */
 
 class Auth extends MY_Controller
 {
