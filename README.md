@@ -1,7 +1,6 @@
 ## CodeIgniter Login
 
 ### Features
-------------------------------------------------------------
 - Telah terintegrasi dengan Template AdminLTE-2.4.3
 - Multi user / multi login
 - Status untuk user yang aktif dan tidak aktif
