@@ -32,12 +32,7 @@ class Home extends MY_Controller
 
     public function index()
     {
-        $site = $this->Konfigurasi_model->listing();
-        $data = array(
-            'title'     => 'Dashboard | '.$site['nama_website'],
-            'favicon'   => $site['favicon'],
-            'site'      => $site
-        );
-        $this->template->load('layout/template', 'member/dashboard', $data);
+        $data = konfigurasi('Dashboard');
+        $this->template->load('layouts/template', 'member/dashboard', $data);
     }
 }

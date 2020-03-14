@@ -31,7 +31,7 @@ class Auth_model extends CI_Model
 
     public function login($email, $password)
     {
-        $query = $this->db->get_where('tbl_user', array('email'=>$email, 'password'=>$password));
+        $query = $this->db->get_where($this->table, array('email'=>$email, 'password'=>$password));
         return $query->row_array();
     }
 
@@ -55,11 +55,25 @@ class Auth_model extends CI_Model
         }
 
         return $query;
+	}
+	
+	public function get_by_id()
+    {
+        $id = $this->session->userdata('id');
+        $this->db->select('
+            tbl_user.*, tbl_role.id AS id_role, tbl_role.name, tbl_role.description,
+        ');
+        $this->db->join('tbl_role', 'tbl_user.id_role = tbl_role.id');
+        $this->db->from($this->table);
+        $this->db->where($this->id, $id);
+        $query = $this->db->get();
+
+        return $query->row();
     }
 
     public function logout($date, $id)
     {
-        $this->db->where('tbl_user.id', $id);
-        $this->db->update('tbl_user', $date);
+        $this->db->where($this->id, $id);
+        $this->db->update($this->table, $date);
     }
 }

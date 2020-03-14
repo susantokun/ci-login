@@ -122,10 +122,10 @@ class Auth extends MY_Controller
                     redirect('member/home');
                 }
             } else {
-                $this->template->load('authentication/layout/template', 'authentication/login', $data);
+                $this->template->load('authentication/layouts/template', 'authentication/login', $data);
             }
         } else {
-            $this->template->load('authentication/layout/template', 'authentication/login', $data);
+            $this->template->load('authentication/layouts/template', 'authentication/login', $data);
         }
     }
     public function logout()
