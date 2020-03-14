@@ -46,7 +46,7 @@ class Auth_model extends CI_Model
             return 1;
         }
         //jika bernilai 2 maka user tidak aktif
-        if ($query->active == 0) {
+        if ($query->activated == 0) {
             return 2;
         }
         //jika bernilai 3 maka password salah
