@@ -1,7 +1,6 @@
-Multi Login dengan Hash di CodeIgniter
-============================================================
+## CodeIgniter Login
 
-Berikut adalah fitur - fitur yang terdapat pada ci-susantokun_login :
+### Features
 ------------------------------------------------------------
 - Telah terintegrasi dengan Template AdminLTE-2.4.3
 - Multi user / multi login
@@ -12,12 +11,17 @@ Berikut adalah fitur - fitur yang terdapat pada ci-susantokun_login :
 - Konfigurasi favicon, logo, dan informasi website dinamis
 - Penambahan MY_Controller untuk session cek login di setiap controller
   
-User Login
-------------------------------------------------------------
+### User Login
 - E-mail    : admin@mail.com (administrator)
 - E-mail    : member@mail.com (member)
 - Password  : password
 
-Github, Youtube, Live Demo, Database dan Tutorial Lengkap
-------------------------------------------------------------
-- http://demo.susantokun.com/
+### More
+- Github https://github.com/susantokun
+- Instagram https://www.instagram.com/susantokun
+- Youtube https://www.youtube.com/susantokun
+- Blog https://www.susantokun.com
+- Info https://info.susantokun.com
+- Demo https://demo.susantokun.com
+- Paypal https://www.paypal.me/susantokun
+- Email admin@susantokun.com
